@@ -57,7 +57,7 @@ public class CreatOrganisationTest extends ConfigFiles
 		/* Step 6: Click on Save Button */
 		CreatingNewOrganization.ClickOnSaveBtn();
 		/* Step 7: Validate Organization should be created */
-		Assert.assertTrue(OrganizationInformation.getOrgSuccMsg().contains("Wipro"));
+		Assert.assertTrue(OrganizationInformation.getOrgSuccMsg().contains("Wipros"));
 		configFiles.LogOutApplication();
 		configFiles.CloseBrowser();
 	}
