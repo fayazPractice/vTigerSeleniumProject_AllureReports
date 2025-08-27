@@ -1,0 +1,39 @@
+Manual Test Case: Create and Delete Organization
+
+Test Objective: To verify that a user can create a new Organization, validate its creation, and then delete the Organization, ensuring it is removed from the system.
+
+Preconditions:
+
+	•  User has valid login credentials.
+	•  Application is accessible.
+	•  Test data is available in the Excel file (sheet: Organizations).
+
+Test Steps:
+
+	1. Launch the application and log in with valid credentials.
+	2. On the Home Page, click the "Organizations" link in the navigation menu.
+	3. On the Organizations page, click the "Create Organization" button.
+	4. In the Create Organization form: a. Enter a unique Account Name (from Excel row 5, column 3 + random number). b. Select an Industry from the dropdown (Excel row 6, column 3). c. Select an Account Type from the dropdown (Excel row 7, column 3).
+	5. Click the "Save" button to create the Organization.
+	6. Capture the Organization name displayed after creation.
+	7. Verify that a success message appears and contains the created Organization name.
+	8. Wait until the Organizations link is visible, then click it again to return to the Organizations list.
+	9. In the search text box, enter the created Organization name.
+	10. Select the Organization filter type as "OrganizationName" (Excel row 9, column 3).
+	11. Click the "Search Now" button.
+	12. Wait for the search results to appear.
+	13. Select the checkbox for the created Organization.
+	14. Click the "Delete" button and accept the alert to confirm deletion.
+	15. Clear the search text box.
+	16. Search for the deleted Organization by name.
+	17. Select the Organization filter type as "OrganizationName" (Excel row 10, column 3).
+	18. Click the "Search Now" button.
+	19. Verify that the Organization is no longer present (confirmation message from Excel row 11, column 4).
+	20. Log out of the application.
+	21. Close the browser.
+
+Expected Results:
+
+	•  Organization is created successfully with correct details.
+	•  Organization can be deleted and is no longer present in the system after deletion.
+	•  All success and confirmation messages match the expected values from the Excel data.

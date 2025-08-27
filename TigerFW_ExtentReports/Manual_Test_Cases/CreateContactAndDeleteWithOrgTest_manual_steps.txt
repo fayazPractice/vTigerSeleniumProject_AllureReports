@@ -1,0 +1,60 @@
+Manual Test Case: Create Contact With Organization and Delete Both
+
+Test Objective: To verify that a user can create a new Organization, create a Contact linked to that Organization, and then delete both the Contact and the Organization, ensuring they are removed from the system.
+
+Preconditions:
+
+	•  User has valid login credentials.
+	•  Application is accessible.
+	•  Test data is available in the Excel file (sheet: Contacts).
+
+Test Steps:
+
+	1. Launch the application and log in with valid credentials.
+	2. On the Home Page, click the "Organizations" link in the navigation menu.
+	3. On the Organizations page, click the "Create Organization" button.
+	4. In the Create Organization form: a. Enter a unique Account Name (from Excel row 13, column 3 + random number). b. Select an Industry from the dropdown (Excel row 14, column 3). c. Select an Account Type from the dropdown (Excel row 15, column 3).
+	5. Click the "Save" button to create the Organization.
+	6. Capture the Organization name displayed after creation.
+	7. Verify that a success message appears and contains the expected text (Excel row 16, column 4).
+	8. On the Home Page, click the "Contacts" link.
+	9. On the Contacts page, click the "Create Contact" button.
+	10. In the Create Contact form: a. Select a Salutation Type (Excel row 17, column 3). b. Enter First Name (Excel row 18, column 3). c. Enter Last Name (Excel row 19, column 3 + random number). d. Click the button to select an Organization.
+	11. In the Organization selection popup: a. Switch to the Organization window (Excel row 20, column 3). b. Enter the previously created Organization name in the search box. c. Select the Organization filter type (Excel row 21, column 3). d. Click the "Search Now" button. e. Select the Organization from the search results. f. Switch back to the Contacts window (Excel row 22, column 3).
+	12. Click the "Save" button to create the Contact.
+	13. Capture the Contact name displayed after creation.
+	14. Verify that a success message appears and contains the expected text (Excel row 23, column 4).
+	15. Wait until the Contacts link is visible, then click it.
+	16. Clear the search text box.
+	17. Search for the created Contact by name.
+	18. Select the filter type for Last Name (Excel row 24, column 3).
+	19. Click the "Search Now" button.
+	20. Wait for the search results to appear.
+	21. Select the checkbox for the created Contact.
+	22. Click the "Delete" button and accept the alert to confirm deletion.
+	23. Clear the search text box again.
+	24. Search for the deleted Contact by name.
+	25. Select the filter type for Last Name (Excel row 25, column 3).
+	26. Click the "Search Now" button.
+	27. Verify that the Contact is no longer present (confirmation message from Excel row 26, column 4).
+	28. Wait until the Organizations link is visible, then click it.
+	29. Clear the search text box.
+	30. Search for the created Organization by name.
+	31. Select the filter type for Organization Name (Excel row 27, column 3).
+	32. Click the "Search Now" button.
+	33. Wait for the search results to appear.
+	34. Select the checkbox for the created Organization.
+	35. Click the "Delete" button and accept the alert to confirm deletion.
+	36. Clear the search text box again.
+	37. Search for the deleted Organization by name.
+	38. Select the filter type for Organization Name (Excel row 28, column 3).
+	39. Click the "Search Now" button.
+	40. Verify that the Organization is no longer present (confirmation message from Excel row 29, column 4).
+	41. Log out of the application.
+	42. Close the browser.
+
+Expected Results:
+
+	•  Organization and Contact are created successfully with correct details.
+	•  Both Contact and Organization can be deleted and are no longer present in the system after deletion.
+	•  All success and confirmation messages match the expected values from the Excel data.

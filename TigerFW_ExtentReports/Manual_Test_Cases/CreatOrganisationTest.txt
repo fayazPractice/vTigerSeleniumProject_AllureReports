@@ -1,0 +1,26 @@
+Manual Test Case: Create Organisation
+
+Test Objective: To verify that a user can create a new Organization with specified parameters (Organization Name, Industry, Type) and validate its creation.
+
+Preconditions:
+
+	•  User has valid login credentials.
+	•  Application is accessible.
+	•  Test data is available in the Excel file (sheet: Organizations).
+
+Test Steps:
+
+	1. Launch the application and log in with valid credentials.
+	2. On the Home Page, click the "Organizations" link in the navigation menu.
+	3. On the Organizations page, click the "Create Organization" button.
+	4. In the Create Organization form: a. Enter a unique Account Name in the Account Name field (from Excel sheet "Organizations", row 1, column 3 + random number). b. Select an Industry from the Industry dropdown (Excel row 2, column 3). c. (Optional) Select an Account Type from the Account Type dropdown (Excel row 3, column 3; currently commented in code).
+	5. Click the "Save" button to create the Organization.
+	6. On the Organization Information page, verify that a success message appears and contains the text "Wipro".
+	7. Log out of the application.
+	8. Close the browser.
+
+Expected Results:
+
+	•  Organization is created successfully with the correct details.
+	•  Success message contains the text "Wipro".
+	•  User is able to log out and close the browser without errors.
